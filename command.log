@@ -1,0 +1,7 @@
+#20191223 masa
+git config --local user.name "Metaclass Eval"
+git config --local user.email "metaclass.eval@gmail.com"
+git config --list
+
+# 20201221
+ruby test_meta_programming.rb
