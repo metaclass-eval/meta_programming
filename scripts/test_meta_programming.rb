@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
-# Version = '20201222-071207'
+# Version = '20210118-054047'
 
 
 # normal repeat
@@ -60,4 +60,14 @@ def eval_method(s)
 end
 p eval_method(fact(5))
 
+
+# operator argument
+def fact(arr, operator)
+  s = arr.to_a.join(operator)
+  eval(s)
+  #arr.inject(0){|a, b| eval("#{a} #{operator} #{b}")}
+end
+
+p fact(1..5, "+")
+p fact(1..5, "*")
 
